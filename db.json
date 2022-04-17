@@ -7,19 +7,33 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 4305,
+      "services": [
+        {
+          "name": "Site novo2",
+          "cost": "200",
+          "description": "site2",
+          "id": "ba6ba94d-a073-45b0-8818-f62aa09a13ef"
+        }
+      ],
       "id": 1
     },
     {
-      "name": "Novo projeto",
+      "name": "Site novo",
       "budget": "10000",
       "category": {
-        "id": "4",
-        "name": "Planejamento"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 3000,
+      "services": [
+        {
+          "name": "devops",
+          "cost": "3000",
+          "description": "desenvolver estrutura do site",
+          "id": "95711d41-2fbb-4785-9de6-ffa00128c616"
+        }
+      ],
       "id": 2
     }
   ],
