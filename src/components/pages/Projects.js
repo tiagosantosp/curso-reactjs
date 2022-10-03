@@ -8,7 +8,7 @@ import ProjectCard from "../project/ProjectCard";
 import Loading from "../layout/Loading";
 
 import styles from './css/Projects.module.css'
-
+import dados from '../../data/db.json'
 
 const Projects = () => {
 
@@ -27,7 +27,10 @@ const Projects = () => {
         setprojects(data)
         setremoveLoading(true)
       })
-      .catch(err => console.log(err))
+      .catch(err => {
+        setprojects(dados.projects)
+        setremoveLoading(true)
+      })
   }, [])
 
   const location = useLocation()
@@ -57,10 +60,10 @@ const Projects = () => {
     {projectMessage && <Message type="success" msg={projectMessage}/>}
     <Container customClass="start">
       {projects.length > 0 && 
-        projects.map(project => (
+        projects.map((project, id) => (
         <ProjectCard 
           id={project.id}
-          key={project.id}  
+          key={id}  
           name={project.name}
           budget={project.budget}
           category={project.category.name}

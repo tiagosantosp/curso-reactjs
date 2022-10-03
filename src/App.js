@@ -1,6 +1,4 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Company from './components/pages/Company';
-import Contact from './components/pages/Contact';
 import Home from './components/pages/Home';
 import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar';
@@ -17,8 +15,6 @@ function App() {
       <Switch>
         <Container customClass="min-height">
           <Route exact path="/"><Home/></Route>
-          <Route  path="/company"><Company/></Route>
-          <Route  path="/contact"><Contact/></Route>
           <Route  path="/newproject"><NewProject/></Route>
           <Route  path="/projects"><Projects/></Route>
           <Route  path="/project/:id"><Project/></Route>

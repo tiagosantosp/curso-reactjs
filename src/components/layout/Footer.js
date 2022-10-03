@@ -1,16 +1,15 @@
-import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
+import {FaLinkedin, FaGithub} from 'react-icons/fa'
 import styles from './css/Footer.module.css'
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <ul className={styles.social_list}>
-        <li><FaFacebook/></li>
-        <li><FaInstagram/></li>
-        <li><FaLinkedin/></li>
+        <li><a target='_blank' href="https://www.linkedin.com/in/tiagosantosp/"><FaLinkedin/></a></li>
+        <li><a target='_blank' href="https://github.com/tiagosantosp/"><FaGithub/></a></li>
       </ul>
       <p className={styles.copy_right}>
-        <span>Costs</span> &copy; 2022
+        <span>Tiagosantosp</span> &copy; 2022
       </p>
     </footer>
   );
