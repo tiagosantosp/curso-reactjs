@@ -34,6 +34,7 @@ npm install
 
 ## Rodar a aplicação localmente
 npm start
+
 A aplicação estará disponível em http://localhost:3000/.
 
 ## Tecnologias Utilizadas
