@@ -4,19 +4,24 @@ Bem-vindo ao projeto Costs, uma aplicação web desenvolvida em React para a ges
 
 ## Demonstração
 
-Veja uma demonstração do projeto [aqui](http://react.tiagosantosp.com.br/).
+Veja uma demonstração do projeto [CLIQUE AQUI](http://react.tiagosantosp.com.br/).
 
 ![Costs Demo](https://db.tiagosantosp.com.br/wp-content/uploads/2023/12/costs-home.png)
 
 ## Funcionalidades
 
 - Adicionar projetos.
+
 ![adicionar](https://db.tiagosantosp.com.br/wp-content/uploads/2023/12/novo-projeto.png)
 
+
 - Gerenciar projetos.
+
 ![projetos](https://db.tiagosantosp.com.br/wp-content/uploads/2023/12/projetos.png)
 
+
 - Definir o orçamento disponível para cada projeto e Registrar custos associados a cada etapa do projeto.
+
 ![editar](https://db.tiagosantosp.com.br/wp-content/uploads/2023/12/editar-projeto.png)
 
 ## Como Rodar Localmente
@@ -24,20 +29,20 @@ Veja uma demonstração do projeto [aqui](http://react.tiagosantosp.com.br/).
 Certifique-se de ter o Node.js instalado em sua máquina. Clone o repositório e execute os seguintes comandos:
 
 
-# Instalar as dependências
+## Instalar as dependências
 npm install
 
-# Rodar a aplicação localmente
+## Rodar a aplicação localmente
 npm start
 A aplicação estará disponível em http://localhost:3000/.
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas
 React
 React-Router-DOM
 
-Contribuindo
+## Contribuindo
 Sinta-se à vontade para contribuir para este projeto. Abra uma issue para discutir novos recursos ou problemas encontrados.
 
 
-Licença
+## Licença
 Este projeto é licenciado sob a Licença MIT.
