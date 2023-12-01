@@ -1,6 +1,7 @@
 import { useHistory } from 'react-router-dom';
 import ProjectForm from '../project/ProjectForm';
 import styles from './css/NewProject.module.css'
+import dados from '../../data/db.json'
 
 const NewProject = () => {
 
@@ -23,7 +24,11 @@ const NewProject = () => {
         console.log(data)
         history.push('/projects', { message: 'Projeto criado com sucesso'})
       })
-      .catch(err => console.log(err))
+      .catch(err => {
+        project.id = dados.projects.length + 1
+        dados.projects.push(project)
+        history.push('/projects', { message: 'Projeto criado com sucesso'})
+      })
   }
 
   return (

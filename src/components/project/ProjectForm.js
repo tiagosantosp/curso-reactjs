@@ -3,6 +3,7 @@ import Select from "../form/Select";
 import SubmitButton from "../form/SubmitButton";
 import styles from "./css/ProjectForm.module.css";
 import { useState, useEffect } from "react";
+import dados from '../../data/db.json'
 
 const ProjectForm = ({ handleSubmit, btnText, projectData }) => {
   const [categories, setCategories] = useState([]);
@@ -17,7 +18,9 @@ const ProjectForm = ({ handleSubmit, btnText, projectData }) => {
   })
     .then((resp) => resp.json())
     .then((data) => setCategories(data))
-    .catch();
+    .catch(err => {
+      setCategories(dados.categories);
+    });
 
   }, [])
 

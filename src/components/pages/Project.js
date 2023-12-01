@@ -11,6 +11,7 @@ import ProjectForm from "../project/ProjectForm";
 import ServiceCard from "../service/ServiceCard";
 import ServiceForm from "../service/ServiceForm";
 import Message from "../layout/Message"
+import dados from '../../data/db.json'
 
 const Project = () => {
   let { id } = useParams();
@@ -31,7 +32,10 @@ const Project = () => {
         setproject(data)
         setServices(data.services)
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        setproject(dados.projects[id])
+        setServices(dados.projects[id].services)
+      });
   }, [id]);
 
   const toggleProjectForm = () => {
@@ -60,7 +64,13 @@ const Project = () => {
         setMessage('Projeto Atualizado!')
         setType('success')
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        dados.projects[project.id] = project
+        setproject(project)
+        setShowProjectForm(false)
+        setMessage('Projeto Atualizado!')
+        setType('success')
+      });
 
   }
   const createService = (project) => {
